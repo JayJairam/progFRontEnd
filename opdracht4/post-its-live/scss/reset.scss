@@ -1,0 +1,19 @@
+@use 'font';
+@use 'colors';
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    background: colors.$blue;
+    font-family: font.$default;
+    font-size: 16px;
+    gap: 20px;
+    flex-wrap: wrap;
+}

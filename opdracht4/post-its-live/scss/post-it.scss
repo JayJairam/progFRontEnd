@@ -1,0 +1,62 @@
+@use 'colors';
+
+.post-it{
+    width:400px; 
+    height:400px; 
+    background: colors.$yellow;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 300px, 300px 100%, 0% 100%);
+    transition: 2s all;
+    transform-origin: top left;
+    flex-shrink: 0;
+}
+
+.post-it:hover{
+    transform: rotate(15deg);
+    transition: 0.5s all;
+ 
+}
+
+.green{
+    background: colors.$green;
+}
+
+.yellow{
+    background:colors.$yellow;
+}
+.red{
+    background: colors.$red;
+}
+
+.green > div, .yellow > div, .red > div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.green > div{
+    background: colors.$greendiv;
+ 
+
+
+}
+
+.yellow > div{
+    background: colors.$yellowdiv;
+
+
+
+}
+
+.red > div{
+    background: colors.$reddiv;
+
+
+
+}
